@@ -1,0 +1,244 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.name {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1.3em;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 0.95em;
+}
+
+/* Sections */
+section {
+    padding: 30px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #667eea;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #667eea;
+}
+
+/* About Section */
+.about p {
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+/* Experience Section */
+.job {
+    margin-bottom: 25px;
+}
+
+.job h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.company {
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.job li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Education Section */
+.degree {
+    margin-bottom: 20px;
+}
+
+.degree h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.school {
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.degree p {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Skills Section */
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #667eea;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: #764ba2;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .title {
+        font-size: 1.1em;
+    }
+
+    .contact-info {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .skill-tags {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 20px;
+    }
+
+    .name {
+        font-size: 1.5em;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+
+    .contact-info {
+        font-size: 0.85em;
+    }
+}
